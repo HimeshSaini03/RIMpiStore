@@ -1,5 +1,5 @@
 const errorHandler = (err, req, res, next) => {
-    console.error(`❌ Error: ${err.message}`.red.bold); // Logs error message
+    console.error(`Error: ${err.message}`.red.bold); // Logs error message
 
     const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
 
